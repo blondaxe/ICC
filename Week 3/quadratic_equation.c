@@ -29,9 +29,9 @@ int main() {
             x = -b/(2*a);
             printf("Solution : %f", x);
         } else {
-            sol1 = -b-sqrt(del)/(2*a);
-            sol2 = -b+sqrt(del)/(2*a);
-            printf("Soltion 1 : %f, solution 2 : %f", sol1, sol2);
+            sol1 = (-b-sqrt(del))/(2*a);
+            sol2 = (-b+sqrt(del))/(2*a);
+            printf("Solution 1 : %f, solution 2 : %f", sol1, sol2);
         }
     }
 }
