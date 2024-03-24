@@ -26,7 +26,7 @@ int main() {
     //char try[len_occurrencee + 1];
 
     if (len_occurrencee > len_texte) {
-        printf("La taille de l'occurrence doit être plus grande que la taille du texte\n");
+        printf("La taille de l'occurrence doit être plus petite que la taille du texte\n");
     } else {
         for (int i=0; i < len_texte-len_occurrencee+1; i++) {
             compt = 0;

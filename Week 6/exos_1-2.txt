@@ -1,0 +1,24 @@
+Exo 1 :
+
+1. " v = 5 "
+2. On appele plus10(5)
+3. " plus 10 = 15 " on return "15"
+3. On appele plus10(15)
+4. " plus 10 = 25 " on return "25"
+5. " v = 5 " car on n'a pas changé la valeur de v
+
+
+
+Exo 2 :
+
+1. " v = 5 "
+2. On appele plus10(&5) : &5 (le pointeur de 5)
+3. Donc *a = &5 donc *a = 5  // Comment l'expliquer ??
+    *a += 10 la valeur associée à &v vaut maintenant 15
+4. " plus 10 = 15 " on return "a" donc "le pointeur de 15"
+5. On appele plus10(pointeur de 15)
+6. Donc *a = pointeur de 15 donc *a = 15
+    *a += 10 la valeur associée à &v vaut maintenant 25
+7. " plus 10 = 25 " on return "a" donc "le pointeur de 25"
+8. " v = 25 "
+    car on va chercher la valeur associée à &v et elle a été modifiée ligne 3 pendant l'appel de la fonction
