@@ -1,6 +1,6 @@
 # include <stdio.h>
 
-int pile[100]; // Doivent être définis içi ??
+int pile[100]; // Doivent être définis car variable globale
 int taille = 0, taille_max, k, nb;
 
 int push(int objet) {
@@ -14,14 +14,13 @@ int push(int objet) {
     }
 }
 
-int pop(int *p_objet) { // Interêt d'utiliser un pointeur içi ??
+int pop(int *p_objet) { // Utilisation pointeur içi ??
     if (taille <= 0) {
         printf("Erreur %d : pile vide\n", *p_objet);
         return 0;
     } else {
         printf("%d\n", pile[taille-1]);
-        pile[taille-1] = 0;
-        taille--;
+        pile[--taille] = 0; // --taille permet de décrémenter taille
         return 1;
     }
 }
