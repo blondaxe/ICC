@@ -36,7 +36,6 @@ int main() {
         i++;
     } while (c == '_' || c == '/' || c == '\\');
 
-
     int max, indice;
     int sommet[101];
 
