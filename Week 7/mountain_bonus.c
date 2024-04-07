@@ -87,5 +87,4 @@ int main() {
         }
         printf("\n");
     }
-
 }
